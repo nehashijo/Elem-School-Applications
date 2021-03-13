@@ -188,7 +188,7 @@ function init_non_math_science_grades_data_set(non_math_science_grades_data_set)
 }
 
 function non_math_science_grades_calculator(row) {
-  var grades_start_col = 38;
+  var grades_start_col = 37;
 
   var student = source_data_sheet.getRange(row, grades_start_col, 1, 4).getValues();
 
@@ -270,9 +270,9 @@ function process_data(row) {
   var math_science_grades_col = 16;
   var non_math_science_grades_col = 17;
   var school_district_col = 18;
-  var grade_level_col = 19;
-  var program_name_col = 20;
-  var auto_fill_data_start_col = 21;
+  var grade_level_col = 21;
+  var program_name_col = 22;
+  var auto_fill_data_start_col = 23;
 
   var data_row = source_data_sheet.getRange(row, 1, 1, source_data_sheet.getLastColumn());
   var upload_location = upload_sheet;
@@ -307,3 +307,9 @@ function test_process_data() {
 
   process_data(2);
 }
+
+
+
+
+
+
