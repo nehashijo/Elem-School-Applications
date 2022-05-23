@@ -1,3 +1,4 @@
+// Fill in the spreadsheet ID here
 var spreadsheet = SpreadsheetApp.openById("1r9P_cR3RFIuXUMw82wRkWQ_0fvxzSdCy1GSS0PGr8g8");
 var data_analysis_sheet = spreadsheet.getSheetByName("Data Analysis"); // Contains the values for each indicator
 var source_data_sheet = spreadsheet.getSheetByName("All Data"); // The mass list of all data for all students
@@ -10,7 +11,6 @@ var math_science_grades_data_set = {};
 var non_math_science_grades_data_set = {};
 var school_district_data_set = {};
 
-// Need to determine how to value "Other" options in these categories
 var default_gender_score = 1;
 var default_ethnicity_race_score = 1;
 var default_school_district_score = 0;
